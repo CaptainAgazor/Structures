@@ -86,11 +86,14 @@ public class Stack <T> implements Iterable<T>{
 
 		@Override
 		public T next() {
+			if (currentNode == null)
+                throw new NoSuchElementException();
 			T element = current.element;
 			current = current.previous;
 			return element;
 		}
 		
+		@Override
         public void remove(){ 
         	throw new UnsupportedOperationException();  
         }

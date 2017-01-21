@@ -1,4 +1,4 @@
-package LinkedList__Test;
+package LinkedStack__Test;
 
 import static org.junit.Assert.*;
 import org.junit.Before;
